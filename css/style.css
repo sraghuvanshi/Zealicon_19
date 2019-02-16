@@ -26,11 +26,7 @@ body {
 #animation {
   width: 450px;
 }
-.image:hover {
-  animation: none;
-  transition: all.4s ease-out;
 
-}
 @-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
@@ -79,13 +75,20 @@ body {
   min-height: 100%;
 }
 
-.cls-3:hover{
-  fill: #f9bd18!important;
-}
-.cls-4{
-  color: #f9bd18;
+/*#about1:hover {
   fill: #f9bd18;
 }
+
+#about2:hover, #about3:hover, #about4:hover {
+  
+  stroke: #f9bd18;
+}*/
+#about:hover {
+fill: #f9bd18;
+  color: #f9bd18;
+  
+}
+
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -135,8 +138,7 @@ body {
 .close {
   opacity: 1;
 }
-.cls-3:hover {
-  color: yellow;
-  fill: yellow;
-}
 
+.a:hover {
+  fill:#f9bd18;
+}

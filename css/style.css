@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: black;
+  overflow-x: hidden;
+}
+#hero {
+  width: 100vw;
+  height: 100vh;
+
+}
+@media(max-width: 768px){
+  #hero {
+    background-position: right;
+  }
+}
+.vertical-text {
+  padding-top: 6rem;
+  transform: rotate(90deg);
+}
+.image {
+  -webkit-animation: rotation 1s infinite linear;
+  transition: 2s ease-out;
+}
+#animation {
+  width: 450px;
+}
+.image:hover {
+  animation: none;
+  transition: all.4s ease-out;
+
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+.c-1 {
+  height: 100vh;
+  flex-direction: column;
+}
+.c-2 {
+  height: 100vh;
+  flex-direction: column;
+}
+.c-3 {
+  flex-direction: column;
+  height: 100vh;
+}
+.logo {
+  width: 200px;
+}
+@media(max-width: 768px){
+  .c-1 {
+    height: 25vh;
+  }
+  .c-2 {
+    height: 50vh;
+  }
+  .c-3 {
+    height: 25vh;
+  }
+  #animation {
+    width: 270px;
+  }
+  .logo {
+    width: 130px;
+  }
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.cls-3:hover{
+  fill: #f9bd18!important;
+}
+.cls-4{
+  color: #f9bd18;
+  fill: #f9bd18;
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+@media(max-width: 768px){
+  .fullscreen-bg__video {
+    height: 100vh;
+    width: auto;
+    right: 200%;
+  }
+}
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+.modal {
+  border-radius: 0;
+  padding-right: 0!important;
+}
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+.about {
+  background-image: url("../img/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(0,0,0,0.8);
+  font-weight: bold;
+}
+.about_back {
+  width: 200px;
+}
+.close {
+  opacity: 1;
+}
+.cls-3:hover {
+  color: yellow;
+  fill: yellow;
+}
+

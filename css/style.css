@@ -5,6 +5,26 @@ body {
   background-color: black;
   overflow-x: hidden;
 }
+@font-face {
+  font-family: bahnschrift_semibold;
+  src: url(../font/bahnschrift._semibold.ttf);
+}
+@font-face {
+  font-family: bahnschrift_bold;
+  src: url(../font/bahnschrift_bold.ttf);
+}
+@font-face {
+  font-family: bahnschrift_light;
+  src: url(../font/bahnschrift_light.ttf);
+}
+@font-face {
+  font-family: bahnschrift_reg;
+  src: url(../font/bahnschrift_reg.ttf);
+}
+.font_bold {
+  font-family:bahnschrift_bold;
+  letter-spacing: .5px;
+}
 #hero {
   width: 100vw;
   height: 100vh;
@@ -120,6 +140,7 @@ fill: #f9bd18;
 .modal {
   border-radius: 0;
   padding-right: 0!important;
+  padding-left: 0!important;
 }
 .modal-full .modal-content {
     min-height: 100vh;
@@ -135,8 +156,21 @@ fill: #f9bd18;
 .about_back {
   width: 200px;
 }
+.mobile_back {
+  text-align: center;
+}
+@media(max-width: 768px){
+  .about_back{
+    width: 100px;
+    text-align: left;
+  }
+  .mobile_back {
+    text-align: left;
+  }
+}
 .close {
   opacity: 1;
+  float: none;
 }
 
 .a:hover {

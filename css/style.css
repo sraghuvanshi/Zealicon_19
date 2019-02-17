@@ -5,6 +5,9 @@ body {
   background-color: black;
   overflow-x: hidden;
 }
+*{
+  outline: 0!important;
+}
 @font-face {
   font-family: bahnschrift_semibold;
   src: url(../font/bahnschrift._semibold.ttf);
@@ -27,6 +30,9 @@ body {
 }
 .font_light {
   font-family: bahnschrift_light;
+}
+.font_semibold {
+  font-family: bahnschrift_semibold;
 }
 #hero {
   width: 100vw;
@@ -154,10 +160,20 @@ fill: #f9bd18;
   background-repeat: no-repeat;
   color: #fff;
 }
+.reach {
+  background-image: url("../img/reach-bg.jpg");
+  background-size: cover!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
 @media(max-width: 768px){
   .about {
     background-image: url(../img/about-mbg.jpg);
   }
+}
+.reach {
+
 }
 .about_back {
   width: 200px;
@@ -173,11 +189,20 @@ fill: #f9bd18;
   font-size: 18px;
   letter-spacing: 0.5px;
 }
+.white_logo{
+  width: 120px;
+}
+.reach_name{
+  text-align: left;
+}
 
 @media(max-width: 768px){
   .about_back{
-    width: 100px;
+    width: 150px;
     text-align: left;
+  }
+  .white_logo{
+    width: 70px;
   }
   .about_text {
     font-size: 14px;
@@ -185,6 +210,9 @@ fill: #f9bd18;
   }
   .mobile_back {
     text-align: left;
+  }
+  .reach_name {
+    text-align: center;
   }
 }
 .close {
@@ -307,6 +335,7 @@ fill: #f9bd18;
 .particle,
 .particle:after {
   background: transparent;
+  z-index: 999;
 }
 
 .particle:after {

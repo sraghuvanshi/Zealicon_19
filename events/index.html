@@ -27,6 +27,15 @@
     transform: skewX(16deg);
     width: 90%;
   }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    display: none;
+  }
+  .owl-theme .owl-dots .owl-dot span:focus ,.owl-theme .owl-dots .owl-dot span:target , .owl-theme .owl-dots .owl-dot span:active {
+    outline: 0!important;
+  }
+  .owl-theme .owl-nav {
+    margin-top: 30px;
+  }
 </style>
 </head>
 <body style="background-image: url(../img/events-bg.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -36,15 +45,18 @@
     <div class="particle particle-3"></div>
     <div class="particle particle-4"></div>
   </div>
-  <div class="container-fluid py-5">
+  <div class="container_fluid py-5">
     <div class="row" style="max-width: 100%!important;">
-      <div class="col-md-2 offset-md-1 pt-1 mobile_back">
+      <div class="col-5 offset-1 pt-1 mobile_back">
         <a href="../">
           <img src="../img/events-back.svg" class="about_back">
         </a>
       </div>
-      <div class="offset-md-6 col-md-3 pt-1 text-center">
-        <img src="../img/z19-whiterim@2x.png" width="100px">
+      <div class="col-2">
+        <p>&nbsp;</p>
+      </div>
+      <div class="col-4 pt-1 text-center">
+        <img src="../img/z19-whiterim@2x.png" class="white_logo">
       </div>
     </div>
   </div>
@@ -80,23 +92,24 @@
         <div class="large-12 columns">
           <div class="owl-carousel owl-theme">
             <div class="item coderz">
-              <p class="event_text_mobile">CODERZ</p>
+              <p class="event_text_mobile" style="margin-left: -40px;">CODERZ</p>
             </div>
             <div class="item mech">
-              <p class="event_text_mobile" style="margin-left: -50px; bottom: 60px;">MECHAVOLTZ</p>
+              <p class="event_text_mobile" style="margin-left: -65px; bottom: 60px;">MECHAVOLTZ</p>
             </div>
             <div class="item coloralo">
-              <p class="event_text_mobile" style="margin-left: -30px; bottom: 45px;">COLORALO</p>
+              <p class="event_text_mobile" style="margin-left: -50px; bottom: 45px;">COLORALO</p>
             </div>
             <div class="item wars">
-              <p class="event_text_mobile">Z-WARS</p>
+              <p class="event_text_mobile" style="margin-left: -40px;">Z-WARS</p>
             </div>
             <div class="item play">
-              <p class="event_text_mobile" style="margin-left: -35px; bottom: 45px;">PLAY IT ON</p>
+              <p class="event_text_mobile" style="margin-left: -45px; bottom: 40px;">PLAY IT ON</p>
             </div>
             <div class="item tro">
-              <p class="event_text_mobile">TROUBLO</p>
+              <p class="event_text_mobile" style="margin-left: -50px;">TROUBLO</p>
             </div>
+            <br/>
           </div>
         </div>
       </div>

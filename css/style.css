@@ -298,7 +298,12 @@ fill: #f9bd18;
 }
 
 /*Particle Animation ---------*/
-
+.animation-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
 .particle,
 .particle:after {
   background: transparent;

@@ -1,9 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Events</title>
+  <title>Zealicon || 2K19</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/docs.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/animate.js"></script>
+  <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <style type="text/css">
+  .owl-dots {
+    display: block;
+  }
+  #demos .owl-carousel .item {
+    height: 275px;
+    transform: skewX(16deg);
+    width: 90%;
+  }
+</style>
 </head>
-<body>
-
+<body style="background-image: url(../img/events-bg.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="animation-wrapper">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
+  <div class="container-fluid py-5">
+    <div class="row" style="max-width: 100%!important;">
+      <div class="col-md-2 offset-md-1 pt-1 mobile_back">
+        <a href="../">
+          <img src="../img/events-back.svg" class="about_back">
+        </a>
+      </div>
+      <div class="offset-md-6 col-md-3 pt-1 text-center">
+        <img src="../img/z19-whiterim@2x.png" width="100px">
+      </div>
+    </div>
+  </div>
+  <div class="d-none d-md-block">
+    <div class="container-fluid py-5" style="padding-right: 0px; padding-left: 0px;">
+      <div class="row">
+        <img src="../img/grey-left.svg" width="10%" style="margin-right: -2%;">
+        <div class="white coderz">
+          <p class="event_text">CODERZ</p>
+        </div>
+        <div class="white mech">
+          <p class="event_text" style="bottom: 70px; margin-left: -50px;">MECHAVOLTZ</p>
+        </div>
+        <div class="white coloralo">
+          <p class="event_text" style="bottom: 55px; margin-left: -40px;">COLORALO</p>
+        </div>
+        <div class="white wars">
+          <p class="event_text">Z-WARS</p>
+        </div>
+        <div class="white play">
+          <p class="event_text" style="bottom: 53px; margin-left: -35px;">PLAY IT ON</p>
+        </div>
+        <div class="white tro" style="margin-right: -1%;">
+          <p class="event_text" style="bottom: 50px;">TROUBLO</p>
+        </div>
+        <img src="../img/grey-right.svg" height="408px" width="10%">
+      </div>
+    </div>
+  </div>
+  <div class="d-block d-md-none">
+    <section id="demos">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item coderz">
+              <p class="event_text_mobile">CODERZ</p>
+            </div>
+            <div class="item mech">
+              <p class="event_text_mobile" style="margin-left: -50px; bottom: 60px;">MECHAVOLTZ</p>
+            </div>
+            <div class="item coloralo">
+              <p class="event_text_mobile" style="margin-left: -30px; bottom: 45px;">COLORALO</p>
+            </div>
+            <div class="item wars">
+              <p class="event_text_mobile">Z-WARS</p>
+            </div>
+            <div class="item play">
+              <p class="event_text_mobile" style="margin-left: -35px; bottom: 45px;">PLAY IT ON</p>
+            </div>
+            <div class="item tro">
+              <p class="event_text_mobile">TROUBLO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script type="text/javascript">
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+      0:{
+        items:2,
+        nav:true
+      },
+      600:{
+        items:3,
+        nav:false
+      },
+      1000:{
+        items:5,
+        nav:true,
+        loop:false
+      }
+    }
+  })
+</script>
 </body>
 </html>

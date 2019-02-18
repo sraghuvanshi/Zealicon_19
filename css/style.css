@@ -85,15 +85,26 @@ body {
 .team_padding {
   padding-right: 5rem;
 }
+#small_icon {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto; z-index: 1;
+}
 @media(max-width: 768px){
   .c-1 {
     height: 25vh;
   }
   .c-2 {
-    height: 50vh;
+    height: 45vh;
   }
   .c-3 {
-    height: 25vh;
+    height: 15vh;
+  }
+  #small_icon {
+    /*right: 10px!important;
+    margin: 0;*/
   }
   .team_padding {
     padding-right: 0;
@@ -240,6 +251,7 @@ body {
     transform: skewX(16deg);
     margin-right: 1%;
     margin-left: 1%;
+    background-color: #fff;
   }
   .event_text {
     color: #fff;
@@ -505,7 +517,27 @@ body {
 }
 .team {
   background-size: cover;
-  background-image: url(../img/events-bg.jpg);
+  background-image: url(../img/team-bg.jpg);
   background-position: center;
   background-attachment: fixed;
+}
+.team_row img {
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.team_row img:hover {
+  border: 5px solid #fff;
+  padding: 10px;
+
+}
+@media(max-width: 768px){
+  .team {
+    background-image: url(../img/team-mbg.jpg);
+  }
+}
+.event_body {
+  background-image: url(../img/events-bg.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }

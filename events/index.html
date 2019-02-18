@@ -39,6 +39,7 @@
 </style>
 </head>
 <body style="background-image: url(../img/events-bg.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div id="snackbar" class="bold_fold">To be updated soon!</div>
   <div class="animation-wrapper">
     <div class="particle particle-1"></div>
     <div class="particle particle-2"></div>
@@ -64,22 +65,22 @@
     <div class="container-fluid py-5" style="padding-right: 0px; padding-left: 0px;">
       <div class="row">
         <img src="../img/grey-left.svg" width="10%" style="margin-right: -2%;">
-        <div class="white coderz">
+        <div class="white coderz" onclick="myFunction()">
           <p class="event_text">CODERZ</p>
         </div>
-        <div class="white mech">
+        <div class="white mech" onclick="myFunction()">
           <p class="event_text" style="bottom: 70px; margin-left: -50px;">MECHAVOLTZ</p>
         </div>
-        <div class="white coloralo">
+        <div class="white coloralo" onclick="myFunction()">
           <p class="event_text" style="bottom: 55px; margin-left: -40px;">COLORALO</p>
         </div>
-        <div class="white wars">
+        <div class="white wars" onclick="myFunction()">
           <p class="event_text">Z-WARS</p>
         </div>
-        <div class="white play">
+        <div class="white play" onclick="myFunction()">
           <p class="event_text" style="bottom: 53px; margin-left: -35px;">PLAY IT ON</p>
         </div>
-        <div class="white tro" style="margin-right: -1%;">
+        <div class="white tro" style="margin-right: -1%;" onclick="myFunction()">
           <p class="event_text" style="bottom: 50px;">TROUBLO</p>
         </div>
         <img src="../img/grey-right.svg" height="408px" width="10%">
@@ -115,7 +116,18 @@
       </div>
     </section>
   </div>
-</body>
+  <script type="text/javascript">
+    function myFunction() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 <script type="text/javascript">
   $('.owl-carousel').owlCarousel({
     loop:true,
@@ -138,5 +150,6 @@
     }
   })
 </script>
+</body>
 </body>
 </html>

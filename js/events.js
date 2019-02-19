@@ -3,8 +3,8 @@
  *
  * Credits for the idea and Regex:
  * http://stevenbenner.com/2010/03/javascript-regex-trick-parse-a-query-string-into-an-object/
-*/
-(function($){
+ */
+ (function($){
   $.deparam = $.deparam || function(uri){
     if(uri === undefined){
       uri = window.location.search;
@@ -13,12 +13,12 @@
     uri.replace(
       new RegExp(
         "([^?=&]+)(=([^&#]*))?", "g"),
-        function($0, $1, $2, $3) {
-          queryString[$1] = decodeURIComponent($3.replace(/\+/g, '%20'));
-        }
+      function($0, $1, $2, $3) {
+        queryString[$1] = decodeURIComponent($3.replace(/\+/g, '%20'));
+      }
       );
-      return queryString;
-    };
+    return queryString;
+  };
 })(jQuery);
 
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
       var data = JSON.parse(this.responseText);
       fake_id=data.data[0].id;
       data.data.map(function(item){
-        $("#side_event").append('<li><a onclick=get_description(this.id) id='+item.id+'>'+item.name+'</a></li>');
+        $("#side_event").append('<li id="sidebarCollapse"><a onclick=get_description(this.id) id='+item.id+'>'+item.name+'</a></li>');
         var element = document.getElementById(fake_id);
         element.classList.add("active");
       });
@@ -114,6 +114,8 @@ $(document).ready(function(){
 });
 
 function get_description(id) {
+  var element = document.getElementById('sidebar');
+  element.classList.remove("active");
   var element=document.getElementById(fake_id);
   element.classList.remove('active');
   fake_id=id;

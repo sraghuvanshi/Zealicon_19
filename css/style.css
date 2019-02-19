@@ -92,6 +92,9 @@ body {
     transform: translate(-50%, -50%);
     margin: 0 auto; z-index: 1;
 }
+.icon_width {
+  width: 30px;
+}
 @media(max-width: 768px){
   .c-1 {
     height: 25vh;
@@ -102,9 +105,8 @@ body {
   .c-3 {
     height: 15vh;
   }
-  #small_icon {
-    /*right: 10px!important;
-    margin: 0;*/
+  .icon_width {
+    width: 20px;
   }
   .team_padding {
     padding-right: 0;

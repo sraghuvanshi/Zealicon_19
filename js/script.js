@@ -1,14 +1,3 @@
-window.onload = function(){
- var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
-    }
-  else{
-     $('#playAudio').remove() /
-  }
-}
-
-
  window.onload= myRotation(); 
   function myRotation() {
     setTimeout(function(){
@@ -16,6 +5,9 @@ window.onload = function(){
       element.classList.remove("image");
     }, 2000);
   }
+$(document).ready(function(){
+        $('#audio')[0].play();
+    });
  $(document).ready(function() {
   //about
   var colorOrig=$("#about1").css('fill');

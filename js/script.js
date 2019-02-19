@@ -5,9 +5,9 @@
       element.classList.remove("image");
     }, 2000);
   }
-$(document).ready(function(){
-        $('#audio')[0].play();
-    });
+// $(document).ready(function(){
+//         $('#audio')[0].play();
+//     });
  $(document).ready(function() {
   //about
   var colorOrig=$("#about1").css('fill');
@@ -62,23 +62,23 @@ $(document).ready(function(){
         $("#events4").css('stroke', colorOrig)
       });
 
-    // //register
-    // var colorOrig=$("#register1").css('fill');
-    // $("#register").hover(
-    //   function() {
-    //     //mouse over
-    //     $("#register").css('cursor', 'hand')
-    //     $("#register1").css('fill', '#f9bd18')
-    //     $("#register2").css('stroke', '#f9bd18')
-    //     $("#register3").css('stroke', '#f9bd18')
-    //     $("#register4").css('stroke', '#f9bd18')
-    //   }, function() {
-    //     //mouse out
-    //     $("#register1").css('fill', colorOrig)
-    //     $("#register2").css('stroke', colorOrig)
-    //     $("#register3").css('stroke', colorOrig)
-    //     $("#register4").css('stroke', colorOrig)
-    //   });
+    //register
+    var colorOrig=$("#register1").css('fill');
+    $("#register").hover(
+      function() {
+        //mouse over
+        $("#register").css('cursor', 'hand')
+        $("#register1").css('fill', '#f9bd18')
+        $("#register2").css('stroke', '#f9bd18')
+        $("#register3").css('stroke', '#f9bd18')
+        $("#register4").css('stroke', '#f9bd18')
+      }, function() {
+        //mouse out
+        $("#register1").css('fill', colorOrig)
+        $("#register2").css('stroke', colorOrig)
+        $("#register3").css('stroke', colorOrig)
+        $("#register4").css('stroke', colorOrig)
+      });
 
     //Reach
     var colorOrig=$("#team1").css('fill');
@@ -137,5 +137,54 @@ function myFunction() {
   // After 3 seconds, remove the show class from DIV
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+function myFunction2() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar2");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 
 
+var check = function() {
+  if (document.getElementById('psd').value ==
+    document.getElementById('cnfpsd').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Not matching';
+  }
+}
+var loginResponse = function(){
+    var data = JSON.parse(this.response);
+    if((data.response == '200_1') || (data.response == 'Already logged in.')){
+        window.location.href = 'http://register.zealicon.in/campusambassador';
+    }
+}
+// var signupResponse = function(){
+//     var data = JSON.parse(this.response);
+//     if(data.response == 'user created'){
+//         window.location.href = 'http://register.zealicon.in/login';
+//     }
+//     console.log(data);
+// }
+var loginSubmit = function(){
+    var data =  JSON.stringify({username:document.getElementById('loginUsername').value,password:document.getElementById('loginPassword').value,token:'zealog476'});
+    var http = new XMLHttpRequest();
+    http.withCredentials = true;
+    http.open('POST', 'http://register.zealicon.in/login', true);
+    http.addEventListener('load',loginResponse);
+    http.send(data);
+}
+// var signupSubmit = function(){
+//     var data =  JSON.stringify({first_name:document.getElementById('firstName').value,last_name:document.getElementById('lastName').value,email:document.getElementById('email').value,username:document.getElementById('username').value,password:document.getElementById('psd').value,college:document.getElementById('college').value,contact:document.getElementById('phoneNumber').value,token:'signpo354'});
+//     var http = new XMLHttpRequest();
+//     http.withCredentials = true;
+//     http.open('POST', 'http://register.zealicon.in/signup', true);
+//     http.addEventListener('load',signupResponse);
+//     http.send(data);
+// }

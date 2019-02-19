@@ -118,10 +118,10 @@ $("#sponsors").hover(
 function mute() {
         if ($('#audio')[0].muted) {
             $('#audio')[0].muted = false;
-            $(".sound_image").attr("src", "img/music-on.svg");
+            $(".sound_image").attr("src", "../img/music-on.svg");
         } else {
             $('#audio')[0].muted = true;
-            $(".sound_image").attr("src", "img/music-off.svg");
+            $(".sound_image").attr("src", "../img/music-off.svg");
         }
     }
  function eventpage(){

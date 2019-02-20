@@ -164,6 +164,9 @@ var loginResponse = function(){
     if((data.response == '200_1') || (data.response == 'Already logged in.')){
         window.location.href = 'http://register.zealicon.in/campusambassador';
     }
+    else if((data.response == '200_2') || (data.response == 'Already logged in.')){
+      window.location.href = 'http://register.zealicon.in/zealicon';
+    }
 }
 // var signupResponse = function(){
 //     var data = JSON.parse(this.response);

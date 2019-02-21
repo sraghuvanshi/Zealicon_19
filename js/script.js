@@ -138,13 +138,14 @@ function myFunction() {
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 function myFunction2() {
-   var x = document.getElementById("snackbar2");
+  //  var x = document.getElementById("snackbar2");
 
-  // Add the "show" class to DIV
-  x.className = "show";
+  // // Add the "show" class to DIV
+  // x.className = "show";
 
-  // After 3 seconds, remove the show class from DIV
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  // // After 3 seconds, remove the show class from DIV
+  // setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  window.location="http://register.zealicon.in"
 }
 
 

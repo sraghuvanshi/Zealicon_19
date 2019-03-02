@@ -4,22 +4,7 @@
  * Credits for the idea and Regex:
  * http://stevenbenner.com/2010/03/javascript-regex-trick-parse-a-query-string-into-an-object/
  */
- (function($){
-  $.deparam = $.deparam || function(uri){
-    if(uri === undefined){
-      uri = window.location.search;
-    }
-    var queryString = {};
-    uri.replace(
-      new RegExp(
-        "([^?=&]+)(=([^&#]*))?", "g"),
-      function($0, $1, $2, $3) {
-        queryString[$1] = decodeURIComponent($3.replace(/\+/g, '%20'));
-      }
-      );
-    return queryString;
-  };
-})(jQuery);
+ 
 
 
 var fake_id;
@@ -103,7 +88,7 @@ $(document).ready(function(){
           document.getElementById("event_description").innerHTML=data.data.description;
           document.getElementById("contact_name").innerHTML=data.data.contact_name;
           document.getElementById("contact_number").innerHTML=data.data.contact_no;
-          document.getElementById("register").href="http://register.zealicon.in/events/"+id;
+          document.getElementById("register").href="http://register.zealicon.in/events/"+data.data.id;
         }
       };
       xhttp.open("GET", "http://backoffice.zealicon.in/api/event/"+fake_id, true);

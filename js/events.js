@@ -26,22 +26,7 @@ var fake_id;
 
 $(document).ready(function(){
 
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(this.responseText);
-      console.log(data);
-    }
-  };
-  xhttp.open("GET", "http://backoffice.zealicon.in/uploads/", true);
-  xhttp.setRequestHeader("x-auth", localStorage.getItem('x-auth'));
-  xhttp.send();
 
-
-
-
-  var params=jQuery.deparam(window.location.search);
-  console.log(params);
   var id =localStorage.getItem('id');
   if(id==1){
     document.getElementById("event_head").src="../img/coloralo-back.svg"
@@ -118,6 +103,7 @@ $(document).ready(function(){
           document.getElementById("event_description").innerHTML=data.data.description;
           document.getElementById("contact_name").innerHTML=data.data.contact_name;
           document.getElementById("contact_number").innerHTML=data.data.contact_no;
+          document.getElementById("register").href="http://register.zealicon.in/events/"+id;
         }
       };
       xhttp.open("GET", "http://backoffice.zealicon.in/api/event/"+fake_id, true);

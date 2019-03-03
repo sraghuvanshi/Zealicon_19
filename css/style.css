@@ -686,3 +686,11 @@ input:focus{
 .links a{
   margin-left: 4px;
 }
+.small_sponsor {
+  height: 200px;
+}
+@media(max-width: 768px){
+  .small_sponsor {
+    width: 100%;
+  }
+}

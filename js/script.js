@@ -97,22 +97,21 @@
         $("#reach3").css('stroke', colorOrig)
         $("#reach4").css('stroke', colorOrig)
       });
-//Sponsors
-var colorOrig=$("#team1").css('fill');
-$("#sponsors").hover(
-  function() {
+  var colorOrig=$("#team1").css('fill');
+    $("#sponsors").hover(
+      function() {
         //mouse over
-        $("#sponsors").css('cursor', 'hand')
+        $("#sponsors0").css('cursor', 'hand')
         $("#sponsors1").css('fill', '#f9bd18')
         $("#sponsors2").css('stroke', '#f9bd18')
         $("#sponsors3").css('stroke', '#f9bd18')
         $("#sponsors4").css('stroke', '#f9bd18')
       }, function() {
         //mouse out
-        $("#sponsors1").css('fill', colorOrig)
-        $("#sponsors2").css('stroke', colorOrig)
-        $("#sponsors3").css('stroke', colorOrig)
-        $("#sponsors4").css('stroke', colorOrig)
+        $("#reach1").css('fill', colorOrig)
+        $("#reach2").css('stroke', colorOrig)
+        $("#reach3").css('stroke', colorOrig)
+        $("#reach4").css('stroke', colorOrig)
       });
 });
 function mute() {

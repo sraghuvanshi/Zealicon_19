@@ -1,820 +1,563 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Zealicon 2019 | Game On!</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134757493-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- owl carousel  -->
+    <link rel="stylesheet" href="/styles/owl.carousel.css">
 
-    gtag('config', 'UA-134757493-1');
-  </script>
+    <!-- my css -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- plugins -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.css" />
+    <!-- favicon -->
+    <link rel='shortcut icon' href='favicon.png' type='image/png' />
+    <title>Zealicon 2020</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-  crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/animations.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
 </head>
+
 <body>
- <!--  <iframe src="sound/bg_zealicon.mp3" allow="autoplay" style="display:none" id="iframeAudio">
- </iframe> -->
- <audio autoplay="true" loop="true" id="audio">
-  <source src="sound/bg_zealicon.mp3" type="audio/mpeg">
-  </audio>
-  <div id="small_icon">
-    <a href="https://www.youtube.com/watch?v=lJIlIQYAvmc">
-      <img src="img/youtube.svg" class="icon_width" />
-    </a>&nbsp;
-    <img src="img/music-on.svg" class="icon_width sound_image" onclick="mute()" class="sound_image">
-    &nbsp;
-    <a href="img/zealicon2019_brochure.pdf" download style="color: #fff;">
-      <img src="img/download.svg" class="icon_width">
-    </a>&nbsp;
-    <a href="https://www.facebook.com/zealicon" target="_blank" class=" d-md-none">
-      <img src="img/facebook.svg" width="25px">
-    </a>
-    <a href="https://www.instagram.com/zealicon" target="_blank" class="d-md-none">
-      <img src="img/instagram.svg" width="25px">
-    </a>
-    <a href="https://www.twitter.com/zealicon" target="_blank" class="d-md-none">
-      <img src="img/twitter.svg" width="25px">
-    </a>
-  </div>
-  <div id="snackbar" class="bold_fold">Our Players are on Hunt!</div>
-  <div id="snackbar2" class="bold_fold">Registrations will be open soon!</div>
 
-  <section id="hero">
-    <div class="animation-wrapper">
-      <div class="particle particle-1"></div>
-      <div class="particle particle-2"></div>
-      <div class="particle particle-3"></div>
-      <div class="particle particle-4"></div>
+    <!-- script need to be loaded for counter  -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+
+    <!-- Navbar -->
+    <div class="navbar" id="navlist">
+        <div class="brand"></div>
+        <div class="nav-buttons">
+            <a class="hide" href="#about">About</a>
+            <a class="hide" href="#highlights">Highlights</a>
+            <a class="hide" href="#sponsors">Sponsors</a>
+            <a class="hide" href="#contact">Contact Us</a>
+            <a class="login hide" href="#comingsoon">Log In</a>
+            <!-- <button class="full" onclick="openNav()"><i class="fal fa-bars"></i></button> -->
+            <div class="logo"></div>
+
+        </div>
     </div>
-    <div class="fullscreen-bg">
-      <div class="d-none d-md-block">
-        <video loop muted autoplay poster="img/image-bg.png" class="fullscreen-bg__video">
-          <source src="video/video-bg_new.mp4" type="video/mp4">
-          </video>
+    <!-- Navbar -->
+
+    
+
+    <!-- full menu  phone-->
+    <div class="fullMenu">
+        <!-- Navigation -->
+        <div class="b-nav">
+            <li><a class="b-link" href="#about">About</a></li>
+            <li><a class="b-link" href="#highlights">Highlights</a></li>
+            <li><a class="b-link" href="#sponsors">Sponsors</a></li>
+            <li><a class="b-link" href="#contact">Contact Us</a></li>
+            <li><a class="b-link" href="#comingsoon">Log In</a></li>
         </div>
-        <div class="d-block d-md-none">
-          <video loop muted autoplay poster="img/image-mbg.jpg" class="fullscreen-bg__video">
-            <source src="video/video-mbg.mp4" type="video/mp4">
-            </video>
-          </div>
+        <!-- Burger-Icon -->
+        <div class="b-container">
+            <div class="b-menu">
+                <div class="b-bun b-bun--top"></div>
+                <div class="b-bun b-bun--mid"></div>
+                <div class="b-bun b-bun--bottom"></div>
+            </div>
+            <!-- Burger-Brand -->
+            <a href="#" class="b-brand"></a>
         </div>
-        <!-- Sponsors-->
-        <div class="animatedParent" >
-          <div class="modal animated zoomIn"  id="sponsors" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
-            <div class="modal-dialog modal-full" role="document">
-              <div class="modal-content team">
-                <div class="container-fluid">
-                  <div class="row py-5">
-                    <div class="col-5 offset-1 mobile_back pt-1">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="img/sponsor-back.svg" class="about_back">
-                      </button>
-                    </div>
-                    <div class="col-2">
-                      <p>&nbsp;</p>
-                    </div>
-                    <div class="col-4 text-center pt-1">
-                      <img src="img/z19-whiterim.png" class="white_logo">
-                    </div>
-                  </div>
-                </div>
-                <div class="container-fluid">
-                  <h4 class="text-center">Title Sponsor</h4>
-                  <div class="row pt-3">
-                    <div class="col-md-12 text-center">
-                      <img src="img/sponsons/hdfc.png" class="small_sponsor">
-                      <p>HDFC BANK (Title Sponsor)</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/glued.jpg" class="small_sponsor">
-                      <p>Glued (Gaming Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/bingo.png" class="small_sponsor">
-                      <p>Bingo (Entertainment Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/rcpl.png" class="small_sponsor">
-                      <p>RCPL (Consultancy Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/honda.png" class="small_sponsor">
-                      <p>Pioneer One Honda (Road Safety Partner)</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/kamat-rolls.png" class="small_sponsor">
-                      <p>Kamat Rolls (Food Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/cafeyuva.jpg" class="small_sponsor">
-                      <p>Cafe Yuva (Food Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/hutkar.png" width="100%" class="small_sponsor">
-                      <p>Hutkar (Food Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/prime-sweets.png" class="small_sponsor">
-                      <p>Prime Sweets (Food Partner)</p>
-                    </div>
-                  </div>
-                   <div class="row">
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/masala-parcel.png" class="small_sponsor">
-                      <p>Masala Parcel (Food Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/stylez.png" class="small_sponsor">
-                      <p>Royal Stylez Salon (Styling Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/pfc.png" class="small_sponsor">
-                      <p>PFC (Goodwill Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/joy-dil-se.png" class="small_sponsor">
-                      <p>Joy Dil Se (Experience Partner)</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/aptron.png" width="100%" class="small_sponsor">
-                      <p>Aptron(Training Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/cetpa.png" width="100%" class="small_sponsor">
-                      <p>Cetpa (Training Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/du.png" width="100%" class="small_sponsor">
-                      <p>DU Beats (Media Partner)</p>
-                    </div>
-                    <div class="col-md-3 col-6 text-center pt-1">
-                      <img src="img/sponsons/atkt-2-01.png" width="100%" class="small_sponsor">
-                      <p>ATKT (Media Partner)</p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <!-- full menu        -->
+    
+          <!-- main slider -->
+    <div class="main-slider">
+        <div class="dark">
+            <h1 class="glitch" data-glitch="ZEALICON">ZEALICON</h1>
+            <p class="twenty-right">20</p>
+            <p class="twenty-left">20</p>
+            
         </div>
-        <!--End SPonsors-->
-        <!--Login/Signup-->
-        <div class="animatedParent" >
-          <div class="modal animated zoomIn"  id="loginmodal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
-            <div class="modal-dialog modal-full" role="document">
-              <div class="modal-content about">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 pt-5">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <img src="img/login-back.svg" width="200px"/>
-                    </button>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center" style="height: 90vh;">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="text-center pt-3">LogIn</h3>
-                    </div>
-                    <div class="card-body">
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control" name="username" id="loginUsername" placeholder="username">
-
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-key"></i></span>
-                        </div>
-                        <input type="password" name="password" id="loginPassword" class="form-control" placeholder="password">
-                      </div>
-                      <input type="hidden" name="token" value="zealog476">
-                      <!-- <input type="hidden" name="temp" value="true"> -->
-<!--                           <div class="row align-items-center remember">
-                            <input type="checkbox">Remember Me
-                          </div> -->
-                          <div class="form-group">
-                            <button type="submit"  onclick="loginSubmit()" class="btn float-right btn-primary">LogIn</button>
-                          </div>
-                          <br/><br/>
-                          <p class="text-center">Game Is On!</p>
-                        </div>
-                        <div class="card-footer">
-                          <div class="d-flex justify-content-center ">
-                            <!-- Don't have an account?<a href="#">Sign Up</a> -->
-
-                          </div>
-                        <!-- <div class="d-flex justify-content-center">
-                          <a href="#">Forgot your password?</a>
-                        </div> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="slide-wrap owl-carousel">
+                    <div class="box b1"></div>
+                    <div class="box b2"></div>
+                    <div class="box b3"></div>
+                    <div class="box b4"></div>
+                    <div class="box b5"></div>
+                    <div class="box b6"></div>
             </div>
-          </div>
         </div>
-        <!--End Login Signup-->
-        <!-- about-->
-        <div class="animatedParent" >
-          <div class="modal animated zoomIn"  id="aboutmodal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
-            <div class="modal-dialog modal-full" role="document">
-              <div class="modal-content about">
-                <div class="container-fluid">
-                  <div class="row py-5">
-                    <div class="col-5 offset-1 mobile_back pt-1">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="img/about.svg" class="about_back">
-                      </button>
-                    </div>
-                    <div class="col-2">
-                      <p>&nbsp;</p>
-                    </div>
-                    <div class="col-4 text-center pt-1">
-                      <img src="img/z19-whiterim.png" class="white_logo">
-                    </div>
-                  </div>
-                </div>
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-7 offset-md-1">
-                      <p class="about_text font_light">Zealicon is the annual techno-cultural festival of JSSATE, Noida. Dedicated to the celebration of creativity and science, it is a stimulating event brimming with youthful dynamism. It transforms the campus into a veritable kaleidoscope of people. Involving multifarious exciting events from technical scratch to cultural zeal. A platform for all the creative minds to express their ideas in the form of events including band performances, discussions, film screenings that are spread over four days. Apart from the exuberant cultural events, Zealicon is also known for its mind boggling technical events that creates an ambience for the technocrats.
-                      </p>
-                      <p class="about_text font_light">Zealicon 2019 will cover the aspects of hysterical face of literature along with popular arts, science and technology. This edition of Zealicon promises all the trademarks of the earlier versions. A plethora of events where academicians will vouch out their intellect and artists will showcase the best of art. Projecting the fictitious gesture onto the real world, Zealicon will act as a connecting link between the fantasy and reality. Creating an aura of avidity and togetherness, We hope that Zealicon 2019 will turn out to be a memorable experience for you !</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    
+
+    <!-- section 2 -->
+    <section class="section2" id="about">
+        <div class="main">
+            <div class="heading">
+                <h3>About <span>Zealicon</span></h3>
+                <p>JSSATE, Noida following its legacy of doing things extraordinary and setting benchmarks, put up a splendid fest, thereby adding another leaf to its success story. The students and staff put in a joint effort, working tirelessly since December, to hold a College Fest. The four day fest, which is a Techno-Cultural extravaganza, had a plethora of exciting events with a huge number of participants. The production work gave a new edge to the ambience of the College with a creative design that showcased aesthetic skills of the finest artists. The success of Fest can be easily evaluated by the fact that it witnessed a turnout of more than 6,000, and every evening had a perfect ending with various events and Battle of Bands to conclude the Fest.</p>
             </div>
-          </div>
+            <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zRidlFAR00A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <!--end about-->
-
-        <!--Reach Start-->
-        <div class="animatedParent">
-          <div class="modal animated zoomIn"  id="reachmodal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
-            <div class="modal-dialog modal-full" role="document">
-              <div class="modal-content reach">
-                <div class="container-fluid">
-                  <div class="row pt-5">
-                    <div class="col-5 offset-1 mobile_back pt-1">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="img/reach-back.svg" class="about_back">
-                      </button>
-                    </div>
-                    <div class="col-2">
-                      <p>&nbsp;</p>
-                    </div>
-                    <div class="col-4 text-center pt-1">
-                      <img src="img/z19-whiterim.png" class="white_logo">
-                    </div>
-                  </div>
-                </div>
-                <div class="container-fluid pt-3">
-                  <div class="row">
-                    <div class="col-md-6 offset-md-1">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5129585806717!2d77.35659471503591!3d28.614384482425013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce518d2daeab9%3A0x91e181c429938a9b!2sJ.S.S.+Academy+of+Technical+Education%2C+Noida!5e0!3m2!1sen!2sin!4v1550401919693" width="100%" height="350" frameborder="0" style="border:0; border-radius: 5px!important" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="row pt-3">
-                    <div class="offset-md-1 col-md-2 reach_name">
-                      <h3 class="font_semibold" style="font-size: 20px; margin-bottom: 0;">Dr. Prashant Chauhan</h3>
-                      <p class="font_light" style="margin-bottom: 0;">Festival Convener</p>
-                      <a href="mailto:zealicon@jssaten.ac.in" style="text-decoration: none; color: #fff;">
-                        <i class="fa fa-envelope" style="color: #fff; font-size: 20px;"></i>&nbsp;zealicon@jssaten.ac.in
-                      </a>
-                    </div>
-                    <div class="col-md-2 reach_name">
-                      <h3 class="font_semibold" style="font-size: 20px; margin-bottom: 0;">Sonu Kumar Bharti</h3>
-                      <p class="font_light" style="margin-bottom: 0;">Festival Secretary</p>
-                      <p class="font_light">9319446763</p>
-                    </div>
-                    <div class="col-md-2 reach_name">
-                      <h3 class="font_semibold" style="font-size: 20px; margin-bottom: 0;">Satyam Verma</h3>
-                      <p class="font_light" style="margin-bottom: 0;">Deputy Festival Secretary</p>
-                      <p class="font_light">9559870238</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Reach End-->
-        <!--Team Modal-->
-        <div class="animatedParent">
-          <div class="modal animated zoomIn"  id="teammodal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
-            <div class="modal-dialog modal-full" role="document">
-              <div class="modal-content team">
-                <div class="container-fluid">
-                  <div class="row pt-5">
-                    <div class="col-5 offset-1 mobile_back pt-1">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="img/team-back.svg" class="about_back">
-                      </button>
-                    </div>
-                    <div class="col-2">
-                      <p>&nbsp;</p>
-                    </div>
-                    <div class="col-4 text-center pt-1">
-                      <img src="img/z19-whiterim.png" class="white_logo">
-                    </div>
-                  </div>
-                </div>
-                <div class="container-fluid">
-                  <h4 class="font_bold text-center">Management Commitee</h4>
-                  <hr width="10%" style="border-bottom: 2px solid #fff;">
-                  <div class="row">
-                    <div class="offset-md-4 col-6 col-md-2">
-                      <img src="img/team/principal.jpg" class="rounded-circle" width="100%">
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Dr. Gurulingappa M Patil</h5>
-                      <p class="text-center font_light">Chairman</p>
-                    </div>
-                    <div class=" col-md-2 col-6">
-                      <img src="img/team/pc.jpg" class="rounded-circle" width="100%">
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Dr. Prashant Chauhan</h5>
-                      <p class="text-center font_light">Convener</p>
-                    </div>
-                  </div>
-                  <h4 class="font_bold text-center pt-3">Core Team Commitee</h4>
-                  <hr width="10%" style="border-bottom: 2px solid #fff;">
-                  <div class="row team_row">
-                    <div class="row">
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/sonu.jpg" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Sonu Kumar Bharti</h5>
-                        <p class="text-center font_light">Festival Secretary</p>
-                      </div>
-                      
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-satyam.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Satyam Verma</h5>
-                        <p class="text-center font_light">Festival Co-secretary</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-dhruv.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Dhruv Srivastav</h5>
-                        <p class="text-center font_light">Technical Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-aditya.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/aditya.rawat.33" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Aditya Rawat</h5>
-                        <p class="text-center font_light">Management Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2 ">
-                        <div class="overlay">
-                          <img src="img/team/img-ashutosh.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Ashutosh Atri</h5>
-                        <p class="text-center font_light">Security Head</p>
-
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-waris.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/mw.waris1" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Waris</h5>
-                        <p class="text-center font_light">Promotion &amp; Mrkt. Head</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/naman.jpg" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/namanjain16" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Naman Jain</h5>
-                        <p class="text-center font_light">Dep. Security Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-anurag.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/anurag539" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Anurag Agarwal</h5>
-                        <p class="text-center font_light">Sponsorship Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/abhaas.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Aabhas Pradhan</h5>
-                        <p class="text-center font_light">Dep. Sponshorship &amp; Mgmt. Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-ankit.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Ankit Gupta</h5>
-                        <p class="text-center font_light">Cultural Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/dalela.jpg" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/ishanuniquedalela" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Ishan Dalela</h5>
-                        <p class="text-center font_light">Media &amp; Photography Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-satwik.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Satwik Singh</h5>
-                        <p class="text-center font_light">Creative Head</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-rishabh.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/rhgh02" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Rishabh Handa</h5>
-                        <p class="text-center font_light">Student Welfare Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-hitwik.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Hitwik Singh</h5>
-                        <p class="text-center font_light">Scheduling Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/utkarsh.jpg" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Utkarsh Mishra</h5>
-                        <p class="text-center font_light">Merchandise Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/img-sujata.png" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Sujata Bajaj</h5>
-                        <p class="text-center font_light">Merchandise Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/vineet.jpg" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="https://www.facebook.com/vineetsharmax" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Vineet Sharma</h5>
-                        <p class="text-center font_light">P.A System Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <div class="overlay">
-                          <img src="img/team/abhay.jpg" width="100%" class="rounded-circle new">
-                          <div class="middle">
-                            <a href="#" target="_blank" style="text-decoration: none;">
-                              <img src="img/facebook.svg" width="50px">
-                            </a>
-                          </div>
-                        </div>
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Abhay</h5>
-                        <p class="text-center font_light">College Promotion Head</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-2 offset-md-2 col-6 pt-2">
-
-                        <img src="img/team/prashant.jpg" width="100%" class="rounded-circle ">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Prashant</h5>
-                        <p class="text-center font_light">Resource Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-                        <img src="img/team/vibhav.jpg" width="100%" class="rounded-circle">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Vibhav Chaturvedi</h5>
-                        <p class="text-center font_light">Social Media and Marketing Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-
-                        <img src="img/team/vinayak_sir.jpg" width="100%" class="rounded-circle">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Vinayak Bansal</h5>
-                        <p class="text-center font_light">Social Media and Marketing Head</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-
-                        <img src="img/team/img-sarvagya.png" width="100%" class="rounded-circle">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Sarvagya Singh</h5>
-                        <p class="text-center font_light">Application Head</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="container-fluid pt-3">
-                  <h4 class="font_bold text-center">Website Team</h4>
-                  <hr width="5%" style="border-bottom: 2px solid #fff;">
-                  <div class="row team_row">
-                    <div class="col-md-2 col-6 pt-2">
-                      <div class="overlay">
-                        <img src="img/team/prankur-cropped.png" width="100%" class="rounded-circle new">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                      </div>
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Prankur Verma</h5>
-                      <p class="text-center font_light">Design Lead</p>
-                    </div>
-                    <div class="col-md-2 col-6 pt-2">
-                      <div class="overlay">
-                        <img src="img/team/yasha_mam.png" width="100%" class="rounded-circle new">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                      </div>
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Yasha Singh</h5>
-                      <p class="text-center font_light">Technical Lead</p>
-                    </div>
-                    <div class="col-md-2 col-6 pt-2">
-                      <div class="overlay">
-                        <img src="img/team/img-kunal.png" width="100%" class="rounded-circle new">
-                        <div class="middle">
-                          <a href="https://www.fb.com/vishnoikunal" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                      </div>
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Kunal Vishnoi</h5>
-                      <p class="text-center font_light">Frontend Developer</p>
-                    </div>
-                    <div class="col-md-2 col-6 pt-2">
-                      <div class="overlay">
-                        <img src="img/team/img-rohit.png" width="100%" class="rounded-circle new">
-                        <div class="middle">
-                          <a href="https://www.fb.com/krrohitch" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                      </div>
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Kumar Rohit</h5>
-                      <p class="text-center font_light">Designer</p>
-                    </div>
-                    <div class="col-md-2 col-6 pt-2">
-                      <div class="overlay">
-                        <img src="img/team/misaki.jpg" width="100%" class="rounded-circle new">
-                        <div class="middle">
-                          <a href="https://www.facebook.com/shubhmisaki" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                      </div>
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Shubham Singh</h5>
-                      <p class="text-center font_light">Designer</p>
-                    </div>
-                    <div class="col-md-2 col-6 pt-2">
-                      <div class="overlay">
-                        <img src="img/team/ayush.png" width="100%" class="rounded-circle new">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                      </div>
-                      <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Ayush Srivastav</h5>
-                      <p class="text-center font_light">Frontend Developer</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-2 offset-md-3 col-6 pt-2">
-
-                        <img src="http://hackncs.com/img/team/rohit-jakhmola.png" width="100%" class="rounded-circle ">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Rohit Jakhmola</h5>
-                        <p class="text-center font_light">Backend Developer</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-
-                        <img src="http://hackncs.com/img/team/anant.png" width="100%" class="rounded-circle">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Anant Jain</h5>
-                        <p class="text-center font_light">Backend Developer</p>
-                      </div>
-                      <div class="col-md-2 col-6 pt-2">
-
-                        <img src="http://hackncs.com/img/team/rahul-sir.png" width="100%" class="rounded-circle">
-                        <div class="middle">
-                          <a href="#" target="_blank" style="text-decoration: none;">
-                            <img src="img/facebook.svg" width="50px">
-                          </a>
-                        </div>
-                        
-                        <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Rahul Singh</h5>
-                        <p class="text-center font_light">Backend Developer</p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Team Modal Ends-->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="d-none d-md-block">
-                <div class="d-flex d-none justify-content-center align-items-center c-1">
-                  <img src="img/text-college.png" height="20%">
-                  <img src="img/line.svg" height="10%" class="p-1">
-                  <a href="https://www.facebook.com/zealicon" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 48.022"><title>Facebook</title><defs><style>.a{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.b{fill:#fff;}.c{filter:url(#a);}</style><filter id="a" x="0" y="0" width="44" height="48.022" filterUnits="userSpaceOnUse"><feOffset input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="b"/><feFlood flood-color="#fff" flood-opacity="0.161"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(-90.901 -348.845)"><g class="c" transform="matrix(1, 0, 0, 1, 90.9, 348.85)"><path class="a" d="M174.672,146.436v13.853l12,6.93,12-6.93V146.436l-12-6.93Z" transform="translate(-164.67 -129.35)"/></g><path class="b" d="M13.6,2H11.8a3,3,0,0,0-3,3V6.8H7V9.2H8.8V14h2.4V9.2H13l.6-2.4H11.2V5a.6.6,0,0,1,.6-.6h1.8Z" transform="translate(102.5 364.5)"/></g></svg>
-                  </a>
-                  <a href="https://www.instagram.com/zealicon/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 48.022"><title>Instagram</title><defs><style>.a{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.b{fill:#fff;}.c{filter:url(#a);}</style><filter id="a" x="0" y="0" width="44" height="48.022" filterUnits="userSpaceOnUse"><feOffset input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="b"/><feFlood flood-color="#fff" flood-opacity="0.161"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(-90.901 -428.845)"><g class="c" transform="matrix(1, 0, 0, 1, 90.9, 428.85)"><path class="a" d="M174.672,146.436v13.853l12,6.93,12-6.93V146.436l-12-6.93Z" transform="translate(-164.67 -129.35)"/></g><path class="b" d="M-103.026-435.035a4.419,4.419,0,0,1-1.456-.279,2.954,2.954,0,0,1-1.061-.692,2.946,2.946,0,0,1-.694-1.064,4.359,4.359,0,0,1-.279-1.456c-.029-.64-.035-.843-.035-2.473s.006-1.832.037-2.475a4.4,4.4,0,0,1,.279-1.456,2.965,2.965,0,0,1,.692-1.062,2.934,2.934,0,0,1,1.064-.694,4.405,4.405,0,0,1,1.456-.279c.64-.028.843-.035,2.472-.035s1.833.007,2.476.038a4.4,4.4,0,0,1,1.456.279,2.963,2.963,0,0,1,1.061.691,2.936,2.936,0,0,1,.695,1.065,4.383,4.383,0,0,1,.278,1.455c.029.641.031.844.031,2.473s-.007,1.833-.035,2.473a4.4,4.4,0,0,1-.279,1.456,3.07,3.07,0,0,1-1.756,1.756,4.4,4.4,0,0,1-1.455.279c-.64.028-.844.035-2.473.035S-102.386-435.007-103.026-435.035Zm.057-10.84a3.3,3.3,0,0,0-1.114.206,1.867,1.867,0,0,0-.688.447,1.832,1.832,0,0,0-.451.689,3.3,3.3,0,0,0-.206,1.113c-.028.631-.035.823-.035,2.425s.007,1.791.035,2.424a3.315,3.315,0,0,0,.206,1.113,1.873,1.873,0,0,0,.448.689,1.838,1.838,0,0,0,.689.447,3.253,3.253,0,0,0,1.113.206c.631.029.823.036,2.424.036s1.791-.007,2.424-.036a3.275,3.275,0,0,0,1.114-.206,1.991,1.991,0,0,0,1.138-1.139,3.269,3.269,0,0,0,.207-1.113c.028-.633.035-.82.035-2.421s-.007-1.791-.035-2.425a3.29,3.29,0,0,0-.207-1.113,1.867,1.867,0,0,0-.447-.689,1.856,1.856,0,0,0-.689-.447,3.276,3.276,0,0,0-1.113-.206c-.631-.029-.821-.035-2.424-.035S-102.336-445.9-102.969-445.874Zm-.664,4.875a3.084,3.084,0,0,1,3.083-3.082A3.083,3.083,0,0,1-97.467-441a3.084,3.084,0,0,1-3.083,3.083A3.085,3.085,0,0,1-103.633-441Zm1.084,0a2,2,0,0,0,2,2,2,2,0,0,0,2-2,2,2,0,0,0-2-2A2,2,0,0,0-102.55-441Zm4.484-3.2a.72.72,0,0,1,.72-.72.72.72,0,0,1,.72.72.72.72,0,0,1-.72.719A.72.72,0,0,1-98.066-444.2Z" transform="translate(213.551 894)"/></g></svg>
-                  </a>
-                  <a href="https://twitter.com/zealicon" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 48.022"><title>Twitter</title><defs><style>.a{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.b{fill:#fff;}.c{filter:url(#a);}</style><filter id="a" x="0" y="0" width="44" height="48.022" filterUnits="userSpaceOnUse"><feOffset input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="b"/><feFlood flood-color="#fff" flood-opacity="0.161"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(-90.901 -388.845)"><g class="c" transform="matrix(1, 0, 0, 1, 90.9, 388.85)"><path class="a" d="M174.672,146.436v13.853l12,6.93,12-6.93V146.436l-12-6.93Z" transform="translate(-164.67 -129.35)"/></g><path class="b" d="M13,3a5.945,5.945,0,0,1-1.713.835A2.444,2.444,0,0,0,7,5.466v.545A5.815,5.815,0,0,1,2.091,3.541S-.091,8.45,4.818,10.632A6.349,6.349,0,0,1,1,11.723c4.909,2.727,10.909,0,10.909-6.273A2.454,2.454,0,0,0,11.865,5,4.211,4.211,0,0,0,13,3Z" transform="translate(106.5 404.51)"/></g></svg>
-                  </a>
-                  <img src="img/line.svg" height="10%" class="p-1">
-                  <a style="font-size: 24px; margin-bottom: -8px; color: #fff;" data-toggle="modal" data-target="#loginmodal" class="font_bold" id="login">LOGIN</a>
-                </div>
-              </div>
-              <div class="d-block d-md-none">
-                <div class="d-flex justify-content-center align-items-center c-1 ">
-                 <h6 class="font_bold">ANNUAL TECHNO-CULTURAL FEST</h6>
-                 <p class="font_bold">JSSATE NOIDA</p>
-               </div>
-             </div>
-           </div>
-           <div class="col-md-6">
-            <div class="d-flex justify-content-center align-items-center c-2">
-              <div>
-                <!-- <img src="img/holo-hud.svg" id="animation" class="image"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" id="animation" class="image" viewBox="0 0 480 480"><defs><style>.cls-1,.cls-2,.cls-4,.cls-5,.cls-7{fill:none;}.cls-2,.cls-4,.cls-5,.cls-7{stroke:#fff;}.cls-2,.cls-4{stroke-miterlimit:10;}.cls-2{stroke-width:2px;}.cls-3,.cls-6{fill:#fff;}.cls-3{opacity:0;}.cls-4{stroke-width:4px;}.cls-5{stroke-width:3px;}.cls-7{stroke-width:5px;}</style></defs><title>Zealicon</title><g id="Layer_2" data-name="Layer 2"><g id="holo"><rect id="blank" class="cls-1" width="480" height="480"/><polygon id="hexagon" class="cls-2" points="207.5 221.03 207.5 257.98 239.5 276.45 271.5 257.98 271.5 221.03 239.5 202.55 207.5 221.03"/><g id="register" onclick="myFunction2()"><title>Register</title><path id="register0" class="cls-3" d="M272,432H208V368h64ZM153,471l90,9,88-10-12-38H160Z"/><path id="register4" class="cls-2" d="M207.5,257.55l32,18.47v37l-32,18.47L175.5,313V276Zm32,18.47v37l32,18.47,32-18.47V276l-32-18.47Zm-32,55.48v60m64-60v60"/><polygon id="register3" class="cls-4" points="215.75 386 215.75 414 240 428 264.25 414 264.25 386 240 372 215.75 386"/><path id="register2" class="cls-5" d="M242.2,389l4.4,4.4-12.1,12.1h-4.4v-4.4ZM229,411h22"/><path id="register1" class="cls-6" d="M184.92,439.15a7.08,7.08,0,0,0-3.18-1.85l-5.84-1.73h0l-.58-.17-1.64-.48h0l-1.57-.46-6.81,23.08,3.79,1.12,2.81-9.52,3.73,1.1,2.25,11,4.55,1.34-2.53-11.41a6.29,6.29,0,0,0,1.51-.15,6.12,6.12,0,0,0,3-1.7,8.52,8.52,0,0,0,2.1-7.13A6,6,0,0,0,184.92,439.15Zm-2.59,5.68a4.27,4.27,0,0,1-.84,1.57,2.62,2.62,0,0,1-2.79.8L173,445.51l1.86-6.3,5.73,1.69a2.68,2.68,0,0,1,1.3.81,2.58,2.58,0,0,1,.62,1.38A4.07,4.07,0,0,1,182.33,444.83Zm11.76-4.32L208,443.17l-.72,3.72-11.61-2.23L194.44,451l9.82,1.89-.71,3.7-9.83-1.89-1.18,6.16,11.62,2.23-.72,3.72-13.89-2.66h0l-1.6-.3,4.53-23.62,1.61.31Zm19.53,19.24a4.72,4.72,0,0,0,.34,2.4,3.9,3.9,0,0,0,1.47,1.72,5.2,5.2,0,0,0,2.36.78,4.84,4.84,0,0,0,2.43-.36,4,4,0,0,0,1.73-1.55,6,6,0,0,0,.8-2.6l.07-.72-4.25-.4.35-3.77,8.3.78-.41,4.43a10,10,0,0,1-1.51,4.6,7.67,7.67,0,0,1-3.29,2.87,9,9,0,0,1-4.59.69,9.51,9.51,0,0,1-4.43-1.47,7.48,7.48,0,0,1-2.76-3.24,9,9,0,0,1-.67-4.53l.67-7.07a9.83,9.83,0,0,1,1.5-4.59,7.58,7.58,0,0,1,3.29-2.86,8.88,8.88,0,0,1,4.59-.69,8.59,8.59,0,0,1,3.79,1.24,8.13,8.13,0,0,1,2.73,2.77,9.35,9.35,0,0,1,1.26,3.89l-4.25-.39a4.22,4.22,0,0,0-.75-1.79,4.63,4.63,0,0,0-5.57-1.36,4.12,4.12,0,0,0-1.74,1.6,5.85,5.85,0,0,0-.8,2.56Zm18.92-14.51,4,.09L236,469.38l-4-.1Zm26,16.62v0a6.88,6.88,0,0,1-.89,3.9,6.52,6.52,0,0,1-3,2.57,12.75,12.75,0,0,1-4.82,1.06l-1.74.07-1.61-.27a13.06,13.06,0,0,1-3-.86,11.79,11.79,0,0,1-2.63-1.52l2-3.25a9.74,9.74,0,0,0,3.19,1.63,10.75,10.75,0,0,0,3.69.44,6.87,6.87,0,0,0,3.7-1,2.74,2.74,0,0,0,1.22-2.49v0a2.47,2.47,0,0,0-.67-1.73,3.44,3.44,0,0,0-1.6-.89,18,18,0,0,0-2.48-.46h-.1l-.1,0-.3,0a23.45,23.45,0,0,1-4-.77,5.62,5.62,0,0,1-2.73-1.83,6.36,6.36,0,0,1-1.27-3.93v0a7.07,7.07,0,0,1,.85-3.94,6.42,6.42,0,0,1,2.86-2.6,11.82,11.82,0,0,1,4.66-1,12.05,12.05,0,0,1,2.6.17,13.86,13.86,0,0,1,5.06,2l-1.77,3.35a11.54,11.54,0,0,0-2.89-1.38,8.37,8.37,0,0,0-2.83-.39,6.35,6.35,0,0,0-3.49,1,2.7,2.7,0,0,0-1.15,2.41v0a2.49,2.49,0,0,0,.73,1.77,3.9,3.9,0,0,0,1.65.9c.66.17,1.57.35,2.73.53l.13,0,.12,0,.19,0,.18,0a19.93,19.93,0,0,1,3.77.9,5.87,5.87,0,0,1,2.6,1.91A6.4,6.4,0,0,1,258.56,461.86Zm17.24-15.62-6.63.86,2.6,20.09-3.9.51-2.6-20.1-6.63.86-.49-3.76,17.16-2.22Zm20.72,12.41.8,3.7-13.82,3h0l-1.61.35-5.06-23.51,1.6-.35h0l13.82-3,.8,3.7L281.49,445l1.35,6.29,9.79-2.11.79,3.68L283.64,455l1.32,6.13Zm19-1.83,4.52-1.45-8.5-8a6.35,6.35,0,0,0,1.15-1,6,6,0,0,0,1.53-3.09,8.51,8.51,0,0,0-2.26-7.08,6.09,6.09,0,0,0-3-1.63,7.06,7.06,0,0,0-3.67.25l-8,2.56h0l-1.56.5L303,460.81l3.76-1.2-3-9.45,3.7-1.19Zm-14.91-16.53,5.69-1.82a2.62,2.62,0,0,1,2.82.73,4.17,4.17,0,0,1,.86,1.54,4.22,4.22,0,0,1,.18,1.76,2.64,2.64,0,0,1-.59,1.4,2.69,2.69,0,0,1-1.27.83l-5.68,1.82Z"/></g><g id="team" data-target="#teammodal" data-toggle="modal"><title>Team</title><path id="team0" class="cls-3" d="M410,351.5H346v-64h64ZM385,384l31,22,44-41,12-52-40-16Z"/><path id="team4" class="cls-2" d="M322.5,323l-19-10.52v-23m32-31.52L374,279.5h60"/><polygon id="team3" class="cls-4" points="353.75 305.5 353.75 333.5 378 347.5 402.25 333.5 402.25 305.5 378 291.5 353.75 305.5"/><path id="team2" class="cls-5" d="M369.79,308.94H380v10.21h-10.2Zm20.9,21.32v-7.33h-4.28m-3.33-4.64H387l0-8.47h-3.85m0,20.44v-7.47H366.69v7.47"/><path id="team1" class="cls-6" d="M406.82,372.41l15.76,12.73-2.47,3.06-15.77-12.73-4.2,5.2-2.94-2.38,10.87-13.46,2.94,2.38Zm21.12-.76-5.19-3.52,5.62-8.28-3.12-2.12L419.63,366l-5.33-3.61,6.64-9.79-3.13-2.13-7.94,11.71h0l-.92,1.35,19.9,13.51.92-1.36h0l7.94-11.7-3.13-2.13ZM424.28,339l25.43,3.65-2,3.73-4.76-.81-4.46,8.13,3.24,3.59L439.63,361l-16.74-19.48Zm4.68,4.22,6.79,7.51,3.19-5.82ZM459.78,319l-22.23-9.19L435.81,314l12.6,11.52-17.05-.76L429.61,329l22.23,9.2,1.41-3.43L438,328.48l14.43.45,1.21-2.93L442.8,316l15.56,6.43Z"/></g><g id="reach" data-target="#reachmodal" data-toggle="modal"><title>Reach Us</title><path id="reach0" class="cls-3" d="M133,351.5H69v-64h64ZM24,369l47,42,26-24L42,292,6,307Z"/><path id="reach4" class="cls-2" d="M175.5,289.5v23L156.5,323M45,279.5h60L143.5,258"/><polygon id="reach3" class="cls-4" points="76.75 305.5 76.75 333.5 101 347.5 125.25 333.5 125.25 305.5 101 291.5 76.75 305.5"/><path id="reach2" class="cls-5" d="M106.5,307.87l5.5,9.93-11,14.3L90,317.8l5.5-9.93ZM97.7,320h6.6v-6.6H97.7Z"/><path id="reach1" class="cls-6" d="M30.62,318.18a6.12,6.12,0,0,0,3.13,1.45,8.52,8.52,0,0,0,7-2.46,6.07,6.07,0,0,0,1.55-3.08,7.09,7.09,0,0,0-.35-3.66l-2.78-7.93h0L38.63,301l-22.71,8,1.31,3.73,9.37-3.28L27.88,313l-7.62,8.27,1.58,4.48,7.78-8.72A5.94,5.94,0,0,0,30.62,318.18Zm5.75-12.24,2,5.63a2.64,2.64,0,0,1,.11,1.54,2.6,2.6,0,0,1-.76,1.3,3.83,3.83,0,0,1-1.51.9,4.1,4.1,0,0,1-1.76.23A2.58,2.58,0,0,1,33,315a2.65,2.65,0,0,1-.86-1.24l-2-5.64ZM30.7,345.28l-5-10.73h0L24.06,331l21.82-10.11,1.23,2.65,5.41,11.67-3.44,1.59-5-10.73-5.84,2.7,4.21,9.08-3.42,1.59-4.21-9.08L29.16,333l5,10.74Zm26.82-1.22-25.27,4.61,2.18,3.65,4.73-1,4.76,8-3.1,3.7L43,366.64l16-20.11Zm-11,12.15-3.41-5.69,9.9-2.07ZM60.92,379a10.78,10.78,0,0,1-4.29,1.1,7.84,7.84,0,0,1-3.88-.82,8.28,8.28,0,0,1-3-2.63c-1-1.42-1.52-2.12-1.52-2.12s-.08-.74-.25-2.2a7.33,7.33,0,0,1,.79-4.22A10.39,10.39,0,0,1,52,364.53l5.36-3.86a10.48,10.48,0,0,1,4.49-1.95,7.44,7.44,0,0,1,4.25.59,9.15,9.15,0,0,1,3.54,3.05,8.46,8.46,0,0,1,1.54,3.73,8,8,0,0,1-.46,3.94,10.83,10.83,0,0,1-2.42,3.71l-2.38-3.31a5.78,5.78,0,0,0,1.1-1.95,4.53,4.53,0,0,0,.19-2,4.14,4.14,0,0,0-.74-1.82,4.49,4.49,0,0,0-1.89-1.56,4.08,4.08,0,0,0-2.33-.23A6.14,6.14,0,0,0,59.75,364l-5.36,3.85a6.1,6.1,0,0,0-1.87,2,4,4,0,0,0-.52,2.28,4.42,4.42,0,0,0,.88,2.28,4.21,4.21,0,0,0,1.49,1.3,4.26,4.26,0,0,0,2,.48,5.31,5.31,0,0,0,2.22-.45Zm27.17,6.11-18,15.92-2.62-3,7.49-6.61-6.26-7.09L61.18,391l-2.62-3,18-15.93,2.62,3-7.7,6.8L77.77,389l7.7-6.8Z"/></g><g id="events" onClick="eventpage()" target="_blank"><title>Events</title><path id="events0" class="cls-3" d="M410,192.5H346v-64h64Zm31-6.5,26-11-19-58L404,69,380,93Z"/><path id="events4" class="cls-2" d="M303.5,182.59V166l19-10.52v-12m111.5,56H374L335.5,221m-64,0v37l32,18.47,32-18.47V221l-32-18.47Z"/><polygon id="events3" class="cls-4" points="353.75 146.5 353.75 174.5 378 188.5 402.25 174.5 402.25 146.5 378 132.5 353.75 146.5"/><path id="events2" class="cls-5" d="M368,155h20v15H368Zm5-6,5,5,5-5"/><path id="events1" class="cls-6" d="M395,93.28l7.15,7.85-2.51,2.29-7.16-7.85h0L391,94h0l-1-1.09L406,78.4l1,1.09h0l.76.83.64.71h0l7.16,7.84L413,91.16l-7.16-7.84-4.27,3.89,6.06,6.64-2.5,2.28-6.06-6.64Zm30.9,8.71-15.4,5.68,9.44-13.42-2.28-3-12.78,18.8,1.85,2.4L428.14,105Zm-3,28.2-5.75-8.92,4.74-3,4.86,7.55,2.85-1.83-4.87-7.55,4.86-3.13,5.74,8.93,2.86-1.84-5.74-8.93h0l-1.93-3-18.15,11.69,1.93,3h0L420,132Zm24,6.22-14.15,7.4,10-15.32-1.79-3.42-19.12,10,1.6,3.05,13.94-7.29L427.54,146l1.8,3.45,19.12-10Zm6,21.8,3.13-1.32-6-14.31-3.14,1.32,2.33,5.53-16.75,7.07,1.37,3.25,16.76-7.06Zm7.36,11.18a11.41,11.41,0,0,0-.49-2.28,10.49,10.49,0,0,0-2.05-3.76,5.81,5.81,0,0,0-2.94-1.84,6.41,6.41,0,0,0-3.62.23h0a5.64,5.64,0,0,0-3.09,2.06,5.07,5.07,0,0,0-.91,2.8,21.18,21.18,0,0,0,.32,3.65l0,.27a.29.29,0,0,0,0,.09.28.28,0,0,1,0,.09,15.24,15.24,0,0,1,.21,2.26,3.23,3.23,0,0,1-.37,1.6,2.29,2.29,0,0,1-1.33,1h0a2.48,2.48,0,0,1-2.45-.45,6.16,6.16,0,0,1-1.79-2.95,9.89,9.89,0,0,1-.53-3.29,9,9,0,0,1,.63-3.16l-3.28-.89a10.24,10.24,0,0,0-.67,2.64,12.26,12.26,0,0,0,0,2.84c.1,1,.16,1.45.16,1.45l.49,1.48a11.39,11.39,0,0,0,2.09,3.9,5.86,5.86,0,0,0,2.95,1.93,6.07,6.07,0,0,0,3.58-.19h0A5.64,5.64,0,0,0,450.1,177a5.24,5.24,0,0,0,1-2.71,17.92,17.92,0,0,0-.14-3.48l0-.16a.88.88,0,0,0,0-.17s0-.08,0-.11,0-.07,0-.11a24.76,24.76,0,0,1-.21-2.49,3.45,3.45,0,0,1,.37-1.65A2.22,2.22,0,0,1,452.4,165h0a2.4,2.4,0,0,1,2.36.39,5.68,5.68,0,0,1,1.71,2.77,7.47,7.47,0,0,1,.36,2.54,10.43,10.43,0,0,1-.48,2.84l3.32.71a12.76,12.76,0,0,0,.49-2.46A12.13,12.13,0,0,0,460.18,169.39Z"/></g><g id="sponsors" data-target="#sponsors" data-toggle="modal"><title>Sponsors</title><path id="sponsors0" class="cls-3" d="M133,192.5H69v-64h64ZM35,213,115,74,94,48,24,118,6,201Z"/><path id="sponsors4" class="cls-2" d="M156.5,143.5v12l19,10.52v16.57M143.5,221,105,199.5H45M143.5,221v37l32,18.47,32-18.47V221l-32-18.47Z"/><polygon id="sponsors3" class="cls-4" points="76.75 146.5 76.75 174.5 101 188.5 125.25 174.5 125.25 146.5 101 132.5 76.75 146.5"/><path id="sponsors2" class="cls-5" d="M109.8,160v11H92.2V160M90,160h22v-5.5H90Zm11,11V154.5m-5-5.5a2.75,2.75,0,0,0,0,5.5h5S99.9,149,96.05,149Zm5,5.5h5a2.75,2.75,0,0,0,0-5.5C102.1,149,101,154.5,101,154.5Z"/><path id="sponsors1" class="cls-6" d="M34.51,191.15a11.44,11.44,0,0,1-.19,4.42L34,197.1s-.2.44-.59,1.33A11.82,11.82,0,0,1,32,200.87,10.38,10.38,0,0,1,30,202.81l-2.37-2.44A8.85,8.85,0,0,0,29.81,198a9.94,9.94,0,0,0,1.22-3.1,6.18,6.18,0,0,0-.05-3.45,2.45,2.45,0,0,0-1.88-1.62h0a2.29,2.29,0,0,0-1.66.19,3.17,3.17,0,0,0-1.13,1.19,18.52,18.52,0,0,0-1,2.05.32.32,0,0,0,0,.09l0,.08-.1.25a22.1,22.1,0,0,1-1.58,3.31,5.08,5.08,0,0,1-2.21,1.95,5.78,5.78,0,0,1-3.71.21h0a6.36,6.36,0,0,1-3.23-1.63,5.69,5.69,0,0,1-1.6-3.08,11.51,11.51,0,0,1,.88-6.5,12.77,12.77,0,0,1,1.22-2.07,13.31,13.31,0,0,1,1.67-1.87l2.5,2.3a10.45,10.45,0,0,0-1.85,2.2,7.32,7.32,0,0,0-1,2.37,5.65,5.65,0,0,0,.06,3.25,2.41,2.41,0,0,0,1.84,1.54h0a2.19,2.19,0,0,0,1.7-.23A3.36,3.36,0,0,0,21,194.15a24.81,24.81,0,0,0,1.08-2.25l.05-.11a.69.69,0,0,1,0-.1,1,1,0,0,1,.07-.15l.06-.16A17.48,17.48,0,0,1,24,188.31a5.21,5.21,0,0,1,2.24-1.81,5.64,5.64,0,0,1,3.51-.18h0A6.16,6.16,0,0,1,33,188,6,6,0,0,1,34.51,191.15Zm-4.72-12.82,8,2.48-1,3.39-20.62-6.38.66-2.14,1.85-6a7.11,7.11,0,0,1,1.81-3.07,5.81,5.81,0,0,1,2.91-1.54,7,7,0,0,1,3.57.23A6.94,6.94,0,0,1,30,167.13,5.7,5.7,0,0,1,31.5,170a7.09,7.09,0,0,1-.25,3.56Zm-9.38-2.89,6.13,1.89,1.5-4.84a2.85,2.85,0,0,0,.07-1.55,2.79,2.79,0,0,0-.78-1.3,3.79,3.79,0,0,0-1.49-.84,3.86,3.86,0,0,0-1.72-.16,2.59,2.59,0,0,0-1.38.63,2.8,2.8,0,0,0-.83,1.33Zm25.46-19.35a8.82,8.82,0,0,1-3.07,7.51,6.85,6.85,0,0,1-3.62,1.45,8.73,8.73,0,0,1-4.23-.69l-5.66-2.31a8.78,8.78,0,0,1-3.5-2.48A6.86,6.86,0,0,1,24.23,156a8.89,8.89,0,0,1,3.07-7.51A6.88,6.88,0,0,1,30.92,147a8.71,8.71,0,0,1,4.23.69L40.81,150a8.71,8.71,0,0,1,3.5,2.48A6.86,6.86,0,0,1,45.87,156.09Zm-3.56.61a3.71,3.71,0,0,0-.87-1.91,5,5,0,0,0-1.92-1.33l-5.85-2.39a4.92,4.92,0,0,0-2.3-.4,3.55,3.55,0,0,0-1.95.75,4.21,4.21,0,0,0-1.31,1.78,4.28,4.28,0,0,0-.32,2.19,3.64,3.64,0,0,0,.87,1.9,4.87,4.87,0,0,0,1.92,1.34L36.43,161a4.94,4.94,0,0,0,2.3.4,3.55,3.55,0,0,0,2-.75A4.21,4.21,0,0,0,42,158.89,4.28,4.28,0,0,0,42.31,156.7Zm-5.79-28.82,14.15,7.42-18.3.49-1.79,3.42,19.1,10,1.6-3-13.93-7.31,18.07-.58,1.81-3.44-19.11-10Zm25.9-12.67h0a5.73,5.73,0,0,0-3.35-1.09,5.35,5.35,0,0,0-2.74.9,17.37,17.37,0,0,0-2.63,2.29,1.36,1.36,0,0,0-.12.12l-.11.12-.08.08a.3.3,0,0,1-.08.08,22.81,22.81,0,0,1-1.81,1.72,3.39,3.39,0,0,1-1.52.75,2.26,2.26,0,0,1-1.67-.4h0a2.38,2.38,0,0,1-1.17-2.09,5.67,5.67,0,0,1,1.1-3.07A7.47,7.47,0,0,1,50,112.74a10.19,10.19,0,0,1,2.52-1.4l-1.52-3a12.94,12.94,0,0,0-2.22,1.16,11.57,11.57,0,0,0-1.88,1.5,11.56,11.56,0,0,0-3.14,5.76,5.79,5.79,0,0,0,.4,3.45,6.52,6.52,0,0,0,2.44,2.68h0A5.71,5.71,0,0,0,50.11,124a5.13,5.13,0,0,0,2.77-1,20.53,20.53,0,0,0,2.64-2.53l.18-.2.07-.06a.13.13,0,0,1,.06-.07,17.61,17.61,0,0,1,1.63-1.58,3.16,3.16,0,0,1,1.48-.7,2.25,2.25,0,0,1,1.62.41h0a2.45,2.45,0,0,1,1.18,2.19,6.12,6.12,0,0,1-1.18,3.24,10,10,0,0,1-2.24,2.47,8.86,8.86,0,0,1-2.86,1.48l1.36,3.12a10.43,10.43,0,0,0,2.48-1.13,12.11,12.11,0,0,0,2.21-1.76l1-1,.85-1.31a11.37,11.37,0,0,0,1.75-4.07,6,6,0,0,0-.34-3.51A6.21,6.21,0,0,0,62.42,115.21Zm13.11-12.78a6.86,6.86,0,0,1,.53,3.86,8.85,8.85,0,0,1-5,6.39,6.73,6.73,0,0,1-3.87.42,8.62,8.62,0,0,1-3.89-1.81l-4.82-3.77a8.63,8.63,0,0,1-2.7-3.33,6.85,6.85,0,0,1-.53-3.86,8.85,8.85,0,0,1,5-6.39,6.91,6.91,0,0,1,3.87-.42A8.73,8.73,0,0,1,68,95.33l4.82,3.77A8.63,8.63,0,0,1,75.53,102.43Zm-3.38,1.41a5,5,0,0,0-1.48-1.8l-5-3.89a5,5,0,0,0-2.1-1,3.71,3.71,0,0,0-2.09.19,4.26,4.26,0,0,0-1.74,1.37,4.21,4.21,0,0,0-.9,2,3.61,3.61,0,0,0,.32,2.06,5,5,0,0,0,1.48,1.8l5,3.9a4.92,4.92,0,0,0,2.11,1,3.59,3.59,0,0,0,2.08-.19,4.57,4.57,0,0,0,2.64-3.38A3.63,3.63,0,0,0,72.15,103.84ZM82.47,86.45,92.63,89l-2.92,3.11L80,89.49,77.59,92l6.49,6.11-2.44,2.58L65.91,85.91l2.43-2.58h0l3.75-4a6.41,6.41,0,0,1,2.77-1.8,5.41,5.41,0,0,1,3.09,0,7.63,7.63,0,0,1,4.86,4.57A5.35,5.35,0,0,1,83,85.18,5.43,5.43,0,0,1,82.47,86.45Zm-3.68-.65a2.37,2.37,0,0,0,.49-2.56,3.93,3.93,0,0,0-.92-1.31A3.68,3.68,0,0,0,77,81.1a2.35,2.35,0,0,0-2.54.66l-3.67,3.9,4.29,4Zm24.79-10.18A6.05,6.05,0,0,0,102,72.4l0,0A5.65,5.65,0,0,0,99,70.43a5.3,5.3,0,0,0-2.88.14A17.46,17.46,0,0,0,93,72.07l-.14.08-.14.09-.1.06a.31.31,0,0,1-.1,0,23.89,23.89,0,0,1-2.2,1.18,3.53,3.53,0,0,1-1.66.31A2.21,2.21,0,0,1,87.16,73h0a2.41,2.41,0,0,1-.57-2.33A5.73,5.73,0,0,1,88.46,68a7.25,7.25,0,0,1,2.19-1.33,10.54,10.54,0,0,1,2.8-.68l-.65-3.33a12.83,12.83,0,0,0-2.45.52,12.16,12.16,0,0,0-2.22,1,10.78,10.78,0,0,0-1.91,1.35,10.61,10.61,0,0,0-2.65,3.36A5.72,5.72,0,0,0,83,72.28a6.42,6.42,0,0,0,1.63,3.23h0a5.74,5.74,0,0,0,3.11,2,5.11,5.11,0,0,0,2.94-.26A22.75,22.75,0,0,0,94,75.55l.23-.14a.18.18,0,0,0,.07,0l.08,0a19.29,19.29,0,0,1,2-1.08A3.15,3.15,0,0,1,98,74a2.21,2.21,0,0,1,1.45.83h0a2.44,2.44,0,0,1,.55,2.42A6.12,6.12,0,0,1,98,80a10.07,10.07,0,0,1-2.82,1.78,8.75,8.75,0,0,1-3.15.66l.47,3.37a10.4,10.4,0,0,0,2.69-.42,12,12,0,0,0,2.6-1.11L99,83.58l1.17-1A11.32,11.32,0,0,0,103,79.09,5.88,5.88,0,0,0,103.58,75.62Z"/></g><g id="about" data-target="#aboutmodal" data-toggle="modal"><title>About</title><path id="about0" class="cls-3" d="M272,112H208V48h64ZM185,52H290L300,9,241,0,176,10Z"/><path id="about4" class="cls-2" d="M207.5,147.55l32,18.47v37l-32,18.47L175.5,203V166Zm32,18.47v37l32,18.47,32-18.47V166l-32-18.47Zm-32-18.52v-30m64,30v-30"/><polygon id="about3" class="cls-4" points="215.75 66 215.75 94 240 108 264.25 94 264.25 66 240 52 215.75 66"/><path id="about2" class="cls-7" d="M240,69.14v5m0,4v13"/><path id="about1" class="cls-6" d="M196.81,15.84l-4.14,22.68,3.76-.67.67-4.29,8.19-1.48,2.13,3.78,3.75-.68-11.81-19.8ZM197.66,30l1.4-9,4.46,7.91Zm30.83-2.3a5.63,5.63,0,0,0-.73-2.39,4.77,4.77,0,0,0-1.65-1.66,5.26,5.26,0,0,0-2.42-.69,5.32,5.32,0,0,0,2.15-1.08,4.15,4.15,0,0,0,1.23-1.74,4.8,4.8,0,0,0,.28-2.19,6.32,6.32,0,0,0-1-3.06A4.84,4.84,0,0,0,224,13.08a7.86,7.86,0,0,0-3.59-.39l-6.07.53-2.56.22L213.67,35l3.52-.31h0l5.35-.47a8,8,0,0,0,3.39-1A5.2,5.2,0,0,0,228,30.93a6,6,0,0,0,.5-3.18Zm-5.68-11.16a2.49,2.49,0,0,1,1,1.94,2.72,2.72,0,0,1-.59,2.13,3.21,3.21,0,0,1-2.17.9l-5,.44-.48-5.48,4.76-.41A3.59,3.59,0,0,1,222.81,16.54Zm1.37,13.33a4.18,4.18,0,0,1-2.69,1l-4.6.41-.52-6,5-.43a4,4,0,0,1,1.86.2,2.39,2.39,0,0,1,1.19.94,3.68,3.68,0,0,1,.5,1.61v.05A2.72,2.72,0,0,1,224.18,29.87ZM244.4,12.75a8.14,8.14,0,0,0-4-1.06,8.28,8.28,0,0,0-4.07.92,7,7,0,0,0-2.76,2.75,8.8,8.8,0,0,0-1,4.16l-.1,6.12a8.7,8.7,0,0,0,.9,4.19A6.78,6.78,0,0,0,236,32.67a8.84,8.84,0,0,0,8.11.13,6.89,6.89,0,0,0,2.76-2.75,8.77,8.77,0,0,0,1-4.16l.1-6.11a8.61,8.61,0,0,0-.9-4.2A6.75,6.75,0,0,0,244.4,12.75Zm-.18,13.19a5,5,0,0,1-.55,2.27,3.62,3.62,0,0,1-1.45,1.5,4.64,4.64,0,0,1-4.29-.07,3.59,3.59,0,0,1-1.41-1.55,4.94,4.94,0,0,1-.47-2.29l.1-6.32a5,5,0,0,1,.55-2.27,3.62,3.62,0,0,1,1.45-1.5,4.26,4.26,0,0,1,2.16-.5,4.13,4.13,0,0,1,2.13.57,3.53,3.53,0,0,1,1.41,1.55,4.9,4.9,0,0,1,.47,2.28Zm21.32-12.62,3.53.33-1.28,13.72a9.51,9.51,0,0,1-1.32,4.24,6.29,6.29,0,0,1-2.89,2.49,8.67,8.67,0,0,1-4.26.55,8.79,8.79,0,0,1-4.07-1.33,6.29,6.29,0,0,1-2.37-3,9.57,9.57,0,0,1-.5-4.41l1.29-13.72,3.53.33-1.29,13.82a4.61,4.61,0,0,0,.78,3.36,4.69,4.69,0,0,0,6.15.57,4.51,4.51,0,0,0,1.4-3.14Zm21.32,6.78-5.91-1L277.81,37l-3.48-.61,3.14-17.92-5.91-1,.59-3.35,15.3,2.68Z"/></g></g></g></svg> 
-              </div> 
-              <img src="img/z19-logo.png" style="z-index: 10; position: absolute;" class="logo">
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="d-none d-md-block">
-              <div class="d-flex justify-content-center align-items-center c-3">
-                <p style="margin-bottom: -8px; font-size: 24px;" class="font_bold">5TH-8TH</p>
-                <p style="font-size: 24px;" class="font_bold">MARCH</p>
-                <img src="img/line.svg" height="10%">
-                <img src="img/text-fest.png" height="45%">
-              </div>
-            </div>
-            <div class="d-block d-md-none">
-              <div class="d-flex justify-content-center align-items-center c-3">
-                <h4 class="font_bold">5TH-8TH MARCH</h4>
-                <a style="font-size: 14px; margin-bottom: -8px; color: #fff;" data-toggle="modal" data-target="#loginmodal" class="font_bold" id="login">LOGIN</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/animate.js"></script>
-  </body>
-  </html>
+
+  
+
+     <!-- section 3 -->
+     <section class="section3" id="highlights">
+            <div class="main">
+                <div class="heading">
+                    <h3>Highlights</h3>
+                 </div>
+
+                <div class="high">
+                    <div class="slide">
+                        <div class="parent-box owl-carousel">
+                            <div class="box"><img src="/img/Carousel (1).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (2).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (3).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (4).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (5).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (6).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (7).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (8).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (9).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (10).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (11).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (12).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (13).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (14).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (15).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (16).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (17).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (18).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (19).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (20).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (21).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (22).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (23).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (24).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (25).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (26).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (27).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (28).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (29).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (30).jpg" alt=""></div>
+                            <div class="box"><img src="/img/Carousel (31).jpg" alt=""></div>
+
+                            
+                        </div>
+                       
+                    </div>
+                    <div class="count">
+                            <div class="row1">
+                                <div class="col1">
+                                        <div style="display: flex;" >                                
+                                                <p class="num c-section4">120</p>
+                                                <p class="num">00+</p> 
+                                            </div> 
+                                    <p class="name">Footfall</p>
+                                </div>
+                                <div class="col2">
+                                        <div style="display: flex;" >                                
+                                                <p class="num c-section4">25</p>
+                                                <p class="num">00+</p> 
+                                            </div> 
+                                        <p class="name">Events</p>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                    <div class="col1">
+                                        
+                                            <div style="display: flex;" >                                
+                                                    <p class="num c-section4">200</p>
+                                                    <p class="num">00+</p> 
+                                            </div>
+                                            <p class="name">Prize Pool</p>
+                                    </div>
+
+                                    <div class="col2">
+                                        <div style="display: flex;" >                                
+                                            <p class="num c-section4">80</p>
+                                            <p class="num">00+</p> 
+                                        </div>                                           
+                                            <p class="name">Registrations</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- section 5 -->
+    <section class="section5" id="sponsors">
+            <div class="main">
+                <div class="heading">
+                    <h3>Last Year's <span>Sponsors</span></h3>
+                 </div>
+                 <div class="sponsors">
+                        <div class="owl-carousel owl-theme left">
+                                <div class="item"><img src="/img/1.png" alt=""></div>
+                                <div class="item"><img src="/img/2.png" alt=""></div>
+                                <div class="item"><img src="/img/3.png" alt=""></div>
+                                <div class="item"><img src="/img/4.png" alt=""></div>
+                                <div class="item"><img src="/img/5.png" alt=""></div>
+                                <div class="item"><img src="/img/6.png" alt=""></div>
+                                <div class="item"><img src="/img/7.png" alt=""></div>
+                                <div class="item"><img src="/img/8.png" alt=""></div>
+                                <div class="item"><img src="/img/9.png" alt=""></div>
+                                <div class="item"><img src="/img/10.png" alt=""></div>
+                                <div class="item"><img src="/img/11.png" alt=""></div>
+                                <div class="item"><img src="/img/12.png" alt=""></div>
+                                <div class="item"><img src="/img/13.png" alt=""></div>
+                                <div class="item"><img src="/img/14.png" alt=""></div>
+                                <div class="item"><img src="/img/15.png" alt=""></div>
+                                <div class="item"><img src="/img/16.png" alt=""></div>
+                            </div>
+                     </div>
+                     <div class="sponsors">
+                        <div class="owl-carousel owl-theme right">
+                                <div class="item"><img src="/img/17.png" alt=""></div>
+                                <div class="item"><img src="/img/18.png" alt=""></div>
+                                <div class="item"><img src="/img/19.png" alt=""></div>
+                                <div class="item"><img src="/img/20.png" alt=""></div>
+                                <div class="item"><img src="/img/21.png" alt=""></div>
+                                <div class="item"><img src="/img/22.png" alt=""></div>
+                                <div class="item"><img src="/img/23.png" alt=""></div>
+                                <div class="item"><img src="/img/24.png" alt=""></div>
+                                <div class="item"><img src="/img/25.png" alt=""></div>
+                                <div class="item"><img src="/img/26.png" alt=""></div>
+                                <div class="item"><img src="/img/27.png" alt=""></div>
+                                <div class="item"><img src="/img/28.png" alt=""></div>
+                                <div class="item"><img src="/img/29.png" alt=""></div>
+                                <div class="item"><img src="/img/30.png" alt=""></div>
+                                <div class="item"><img src="/img/31.png" alt=""></div>
+                                <div class="item"><img src="/img/32.png" alt=""></div>
+                            </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        <!-- section 8 -->
+    <section class="section8" id="form">
+        <div class="container-box">
+            <div class="heading">
+                <h3>Become a Sponsor</h3>
+            </div>
+            <!-- https://script.google.com/macros/s/AKfycbxMxBOZDda9i1Pwx-9tBUz2tNoTBQnVYtziD1rt/exec -->
+            <form class="gform" method="POST" data-email="rajatverma5885045@gmail.com" action="https://script.google.com/macros/s/AKfycbxMxBOZDda9i1Pwx-9tBUz2tNoTBQnVYtziD1rt/exec">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Sponsor Name <span>*</span></label>
+                        <input type="text" class="form-control" id="name" placeholder="Sponsor Name" name="sponsers-name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="company">Contact person <span>*</span></label>
+                        <input type="text" class="form-control" id="company" placeholder="Contact person" name="contact-person" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="number">Contact Number <span>*</span></label>
+                        <input type="tel" class="form-control" id="number" placeholder="Number" name="contact-number" maxlength="10" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="comment">Address <span>*</span></label>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Address" name="address" required></textarea>
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Keep me updated
+                        </label>
+                    </div>
+                </div> -->
+                <button type="submit" class="btn">Submit</button>
+                <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h2 style="color: white;"><b>Thanks</b> for contacting us! We will get back to you soon!
+                    </h2>
+                   </div>
+            </form>
+        </div>
+    </section>
+
+ <!-- section 7 -->
+ <section class="section7" id="comingsoon">
+    <div class="main">
+        <div class="heading">
+            <h3>Campus <span>Ambassador</span></h3>
+        </div>
+        <div class="circle-wrap">
+        <div class="circle">
+            <h1 class="glitch" data-glitch="ZEALICON">COMING SOON</h1>
+            <p>STAY TUNED!</p>
+            <!-- <a class="login" href="#form">NOTIFY ME</a> -->
+        </div>
+    </div>
+    </div>
+</section>
+
+
+         <!-- section 4 -->
+     <section class="section4" id="contact">
+            <div class="main">
+                <div class="heading">
+                    <h3>Contact Us:</h3>
+                 </div>
+
+                <div class="high">
+                    <div class="slide">
+                        <div class="content">
+                                <p class="contact" style="margin-bottom: 0; padding-bottom: 0; line-height: 0.1;"> <span>Contact Person :</span></p> <br>
+                                             <p class="person"> <span>Devanshu Monga :</span> 9899863709 <br> (Festival Secretary)<br> </p>
+                                                <p class="person"><span>Kushagra Bharadwaj :</span> 9411224086 <br>(Festival Secretary)</p>   
+                                <p class="contact"> <span>Email :</span> zealicon@jssaten.ac.in</p>
+                                <p class="contact"> <span>Social Links :</span></p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/zealicon/" target="_blank"> <img src="/img/fb.png" alt="."></a>
+                                    <a href="https://www.instagram.com/zealicon/" target="_blank"><img src="/img/insta.png" alt="."></a>
+                                    <a href="https://www.youtube.com/watch?v=zRidlFAR00A" target="_blank"><img src="/img/youtube.png" alt="."></a>
+                                </div>
+                    </div>
+                    </div>
+                    <div class="count">
+                        <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5450831368453!2d77.3582765147209!3d28.613421191697267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5992452d761%3A0xaaa44725147c1507!2sJSS%20Academy%20of%20Technical%20Education!5e0!3m2!1sen!2sin!4v1573230179534!5m2!1sen!2sin" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="visit">
+                            <div class="pay">Pay us a visit at :</div>
+                            <div class="location">JSS Academy of Technical Education <br> C-20/1, Sector-62, Noida 201301</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    <!-- Footer  -->
+    <footer class="p-4">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col text-center">
+              <p>Reach us at <b>zealicon@jssaten.ac.in</b> </p>
+              <small class="text-muted">
+               <p>Copyright &copy; 2019 <span>Zealicon'2020</span></p>
+              </small>
+            </div>
+          </div>
+          <a href="#" class="go-top"><i class="far fa-chevron-up"></i></a>
+        </div>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <!-- go top  -->
+        <script src="/js/gotop.js"></script>
+    
+    <!-- menu phone  -->
+    <script src="/js/fullMenu.js"></script>
+
+     <!-- owl carousel -->
+     <script src="/js/jquery.js"></script>
+     <script src="/js/owl.carousel.js"></script>
+
+     <script data-cfasync="false" type="text/javascript" src="/js/form-submission-handler.js"></script>
+    
+    <!-- owl carousel settings -->
+    
+    <script>
+         $(".slide-wrap").owlCarousel({
+                        loop: true,
+                        margin: 30,
+                        nav: true,
+                        autoplay: true,
+                        autoplayTimeout: 3520,
+                        autoplayHoverPause: true,
+                        // slideTransition: `linear`,
+                        // autoplay: true,
+                        // rtl:true,
+                        // autoplayTimeout: 1000,
+                        // autoplayTimeout: 1520,
+                        // smartSpeed: 1500,
+                        // animateIn: 'linear',
+                        // animateOut: 'linear',
+                        responsive: {
+                            0: {
+                            items: 1
+                            },
+                            200: {
+                            items: 1
+                            },
+                            1000: {
+                            items: 1
+                            }
+                        }
+                        });
+
+    $(".parent-box").owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        dots: true,
+                        autoplay: true,
+                        autoplayTimeout: 2520,
+                        autoplayHoverPause: true,
+                        // slideTransition: `linear`,
+                        // autoplay: true,
+                        // rtl:true,
+                        // autoplayTimeout: 1000,
+                        // autoplayTimeout: 1520,
+                        // smartSpeed: 1500,
+                        // animateIn: 'linear',
+                        // animateOut: 'linear',
+                        responsive: {
+                            0: {
+                            items: 1
+                            },
+                            200: {
+                            items: 1
+                            },
+                            1000: {
+                            items: 1
+                            }
+                        }
+                        });
+
+    $(".left").owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        slideTransition: `linear`,
+                        autoplay: true,
+                        autoplayTimeout: 3520,
+                        // autoplayHoverPause: true,
+                        smartSpeed: 8000,
+                        animateIn: 'linear',
+                        animateOut: 'linear',
+                        responsive: {
+                            0: {
+                            items: 1
+                            },
+                            200: {
+                            items: 2
+                            },
+                            1000: {
+                            items: 6
+                            }
+                        }
+                        });
+    
+    $(".right").owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        slideTransition: `linear`,
+                        autoplay: true,
+                        // autoplayTimeout: 1000,
+                        autoplayTimeout: 3520,
+                        smartSpeed: 8000,
+                        rtl:true,
+                        animateIn: 'linear',
+                        animateOut: 'linear',
+                        responsive: {
+                            0: {
+                            items: 1
+                            },
+                            200: {
+                            items: 2
+                            },
+                            1000: {
+                            items: 6
+                            }
+                        }
+                        });
+
+    </script>
+
+
+   
+  
+    
+    <!-- Navbar scroll effect  -->
+    <script>
+            var navul = document.getElementById("navlist")
+
+            $(window).scroll(function() {
+                $(navul).toggleClass('scrolled', $(this).scrollTop() > 15);
+
+            });
+    </script>
+
+    <script>
+        
+        var bun = document.getElementsByClassName("b-menu")
+
+            $(window).scroll(function() {
+                $(bun).toggleClass('scrolled', $(this).scrollTop() > 15);
+
+            });
+    </script>
+
+            <!-- counter -->
+
+
+            <script>
+                $(function () {
+                function isScrolledIntoView($elem) {
+                    var docViewTop = $(window).scrollTop();
+                    var docViewBottom = docViewTop + $(window).height();
+                    var elemTop = $elem.offset().top;
+                    var elemBottom = elemTop + $elem.height();
+                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                }
+            
+                function count($this) {
+                    var current = parseInt($this.html(), 10);
+                    if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
+                        $this.html(++current);
+                        $this.data("isCounting", true);
+                        setTimeout(function () {
+                            $this.data("isCounting", false);
+                            count($this);
+                        }, 6);
+                    }
+                }
+            
+                $(".c-section4").each(function () {
+                    $(this).data('count', parseInt($(this).html(), 10));
+                    $(this).html('0');
+                    $(this).data("isCounting", false);
+                });
+            
+                function startCount() {
+                    $(".c-section4").each(function () {
+                        count($(this));
+                    });
+                };
+            
+                $(window).scroll(function () {
+                    startCount();
+                });
+            
+                startCount();
+            });
+            
+            </script>
+
+</body>
+
+</html>

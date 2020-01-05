@@ -482,6 +482,17 @@ body.open:after {
   margin-right: 65px;
 }
 
+.main-slider .dark h1.dates {
+  font-size: 1.5em;
+  margin-top: 2.5em;
+}
+
+@media only screen and (max-width: 620px) {
+  .main-slider .dark h1.dates {
+    display: none;
+  }
+}
+
 .main-slider .dark .glitch {
   text-decoration: none;
   text-transform: uppercase;
